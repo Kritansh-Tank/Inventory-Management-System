@@ -59,3 +59,39 @@ This Inventory Management System is built using Django to efficiently manage pro
 1. Backend: Django
 2. Frontend: HTML, CSS, JavaScript
 3. Database: SupabaseDB
+
+## Database Models
+
+1. Product
+    1. name: varchar
+    2. description: text
+    3. category: varchar
+    4. price: float8
+    5. stock_quantity: numeric
+    6. supplier: varchar (foreign key to Supplier)
+  
+2. Supplier
+    1. name: varchar
+    2. email: varchar
+    3. phone: numeric
+    4. address: text
+
+3. SaleOrder
+    1. product: text (foreign key to Product)
+    2. quantity: numeric
+    3. total_price: float8
+    4. sale_date: date
+    5. status: varchar (Pending/Completed/Cancelled)
+
+4. StockMovement
+    1. product: text (foreign key to Product)
+    2. quantity: numeric
+    3. movement_type: varchar ("In" for incoming stock, "Out" for sales)
+    4. movement_date: date
+    5. notes: text
+  
+## Usage
+
+1. Navigate to the UI to manage products, suppliers, stock movements, and sale orders.
+2. Use the provided forms to add, list, and manage data.
+3. Use filtering options to narrow down your data view.
