@@ -95,3 +95,7 @@ This Inventory Management System is built using Django to efficiently manage pro
 1. Navigate to the UI to manage products, suppliers, stock movements, and sale orders.
 2. Use the provided forms to add, list, and manage data.
 3. Use filtering options to narrow down your data view.
+
+## Image
+
+![Inventory Management System](https://drive.google.com/uc?id=1Oex6kExoERVeKmgiQSHjEVQLcqWpJ_YD)
